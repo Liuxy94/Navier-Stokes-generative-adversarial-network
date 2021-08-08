@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+\usepackage{cite}
+\usepackage{graphicx} % Required for including pictures
+\usepackage{mathrsfs}
+\usepackage{amsbsy}
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\usepackage{amsmath}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage{bm}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{mathtools}
+\usepackage{indentfirst}
+\usepackage{tcolorbox}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\setlength{\topmargin}{-.3in} 
+\setlength{\textheight}{8.4in}
+\setlength{\textwidth}{5.9in}      
+\setlength{\oddsidemargin}{0.2in}  
+\setlength{\evensidemargin}{0.2in} 
+\usepackage{pifont}
+
+\newcommand{\vertiii}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert #1 
+    \right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}
+\renewcommand{\div}{\nabla \cdot}
+\newcommand{\bsigma}{\mbox{\boldmath${\sigma}$}}
+\newcommand{\bSigma}{\mbox{\boldmath${\Sigma}$}}
+\newcommand{\tbsigma}{\mbox{\boldmath${\widetilde{\sigma}}$}}
+\newcommand{\tb}{\mbox{\boldmath${\widetilde{b}}$}}
+\newcommand{\btheta}{\mbox{\boldmath${\theta}$}}
+\newcommand{\bdelta}{\mbox{\boldmath${\delta}$}}
+\newcommand{\btau}{\mbox{\boldmath${\tau}$}}
+\newcommand{\bpsi}{\mbox{\boldmath${\psi}$}}
+\newcommand{\bphi}{\mbox{\boldmath${\phi}$}}
+\newcommand{\Beta}{\mbox{\boldmath${\eta}$}}
+\newcommand{\bu}{\bm{u}}
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+
+\begin{document}
+
+\title{Navier-Stokes Generative Adversarial Network}
+\date{}
+\maketitle
+\section{Mathematical model}
+We consider the physic information redisual equation that
+\begin{equation}
+    r_{cty} = \nabla \cdot \bu
+\end{equation}
+\begin{equation}
+    r_{u} = \bu_t + \sigma \bu + (\bu \cdot \nabla)\bu  - \mu\Delta\bu + \nabla p
+\end{equation}
+\begin{equation}
+    r_{c} = c_t + \sigma c + (\bu \cdot \nabla)c - \mu\Delta c
+\end{equation}
+
+
+\section{Network Construction}
+
+
+\bibliographystyle{plain}
+\bibliography{list}
+\end{document}
